@@ -1,13 +1,13 @@
 ```
 program halt-checker
-    will_halt(prgm): boolean
+    will-halt(prgm): boolean
         // hypothetical logic to test if prgm would halt in a finite amount of time
     end
 end
 
 program fuckery
     check(prgm): void
-        if halt-checker.will_halt(prgm)
+        if halt-checker.will-halt(prgm)
             loop infinity
         else
             exit
